@@ -1,0 +1,88 @@
+# --------------------
+# Dependencies
+# --------------------
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# --------------------
+# Python virtual environments
+# --------------------
+venv/
+env/
+.venv/
+.env/
+
+# --------------------
+# Python cache and compiled files
+# --------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --------------------
+# Test results and coverage
+# --------------------
+/coverage
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+*.log
+nosetests.xml
+coverage.xml
+
+# --------------------
+# Next.js
+# --------------------
+/.next/
+/out/
+
+# --------------------
+# Production build
+# --------------------
+/build
+
+# --------------------
+# Misc
+# --------------------
+.DS_Store
+*.pem
+
+# --------------------
+# Debug logs
+# --------------------
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# --------------------
+# Environment variables
+# --------------------
+.env*
+.env.*
+
+# --------------------
+# IDE/editor settings
+# --------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --------------------
+# Mypy & Pyre type checker
+# --------------------
+.mypy_cache/
+.pyre/
+
+# --------------------
+# Vercel
+# --------------------
+.vercel
