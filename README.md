@@ -1,8 +1,11 @@
-# ai-language-tutor-tests
+# Pytest Foundational Knowledge
+The goal of this project is to demonstrate strong proficiency in automated testing using `pytest` through hands-on examples. These include unit testing, fixtures, test filtering, configuration, and integration with API and UI workflows.
 
-This project is dedicated to mastering the `pytest` framework as part of the **Python Testing Path** from Test Automation University. It is structured as a practical learning repository to reinforce key testing concepts and apply them to a real-world application: the AI Language Tutor.
+All tests will be written for the **AI-Language-Tutor** application, which includes both frontend and backend components.
 
-The goal is to demonstrate strong proficiency in automated testing using `pytest` through examples that include unit testing, fixtures, test filtering, configuration, and integrations with API and UI workflows.
+- 🔗 **Frontend Repository:** [ai-language-tutor-frontend](https://github.com/bryan-melo/ai-language-tutor-frontend)  
+- 🔗 **Backend Repository:** [ai-language-tutor-backend](https://github.com/bryan-melo/ai-language-tutor-backend)  
+- 🌐 **Hosted App:** [Live Fullstack App](https://ai-language-tutor-frontend-sable.vercel.app/)
 
 ---
 
@@ -32,13 +35,22 @@ _This section will explain how to use `@pytest.fixture` to share setup logic acr
 
 ## Pytest Commands & Configuration
 
-_This section will cover commonly used CLI commands (`-v`, `-k`, `-s`, etc.) and how to use a `pytest.ini` or `pyproject.toml` file to configure pytest behavior._
+- python -m pytest tests/ --verbose
+- python -m pytest tests/ --quiet 
+- python -m pytest tests/ --exitfirst
+- python -m pytest tests/ --maxfail=[num of failed tests wanted before exiting]
+- python -m pytest tests/ --junit-xml reports/test.xml
+
+---
+
+- pytest.ini 
 
 ---
 
 ## Filtering Tests
 
-_This section will demonstrate test filtering using markers, names, and expressions to selectively run tests._
+- -k
+- 
 
 ---
 
