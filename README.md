@@ -35,34 +35,72 @@ _This section will explain how to use `@pytest.fixture` to share setup logic acr
 
 ## Pytest Commands & Configuration
 
-- python -m pytest tests/ --verbose
-- python -m pytest tests/ --quiet 
-- python -m pytest tests/ --exitfirst
-- python -m pytest tests/ --maxfail=[num of failed tests wanted before exiting]
-- python -m pytest tests/ --junit-xml reports/test.xml
+### Pytest Commands
+```bash
+   python -m pytest tests/ --verbose
+   - python -m pytest tests/ --quiet 
+   - python -m pytest tests/ --exitfirst
+   - python -m pytest tests/ --maxfail=[num of failed tests wanted before exiting]
+   - python -m pytest tests/ --junit-xml reports/test.xml
+```
 
----
-
-- pytest.ini 
+### Pytest Configuration File
+```bash
+   - pytest.ini 
+```
 
 ---
 
 ## Filtering Tests
 
+### Using -K to filter tests
+```bash
 - -k
-- 
+```
 
 ---
 
 ## Plugins
 
-_This section will introduce useful plugins like `pytest-cov` for test coverage and how to install and use them._
+### Generated HTML test results
+```bash
+   pip install pytest-html
+   python -m pytest --html=[directory]/[filename].html
+```
+
+### Coverage.py
+```bash
+   pip install pytest-cov
+   python -m pytest --cov=[directory]
+```
+
+### Coverage HTML Test Reports
+```bash
+   python -m pytest --cov=stuff --cov-report=html:[directory]/[filename]  
+```
+
+### Coverage Branch Test
+```bash
+   python -m pytest --cov=stuff --cov-branch
+```
+
+### Pytest-XDist
+```bash
+   pip install pytest-xdist
+   python -m pytest -n 3
+```
+
+### Behavior-Driven Development
+- BDD
 
 ---
 
 ## API Testing
 
-_This section will show how to test RESTful APIs using `requests` + `pytest`, including response validation and error handling._
+### Requests Package
+```bash
+   pip install requests
+```
 
 ---
 
