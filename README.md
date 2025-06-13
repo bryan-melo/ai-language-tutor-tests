@@ -106,4 +106,13 @@ _This section will explain how to use `@pytest.fixture` to share setup logic acr
 
 ## UI Testing
 
-_This section will demonstrate basic Selenium-based UI testing within a `pytest` test suite, covering DOM assertions and form validations._
+### Playwright
+```bash
+   pip install playwright
+   pip install pytest-playwright
+   playwright install
+```
+
+```bash
+   python -m pytest [directory]/[filename] --headed --slowmo 1000
+```
