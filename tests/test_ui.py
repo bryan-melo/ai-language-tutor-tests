@@ -23,4 +23,4 @@ def test_acme_bank_login(page: Page):
    expect(page.get_by_text('View Statement')).to_be_visible()
    expect(page.get_by_text('Request Increase')).to_be_visible()
    expect(page.get_by_text('Pay Now')).to_be_visible()
-   
+    

@@ -117,3 +117,10 @@ _This section will explain how to use `@pytest.fixture` to share setup logic acr
    python -m pytest [directory]/[filename] --headed --slowmo 1000
 ```
    
+
+
+Ranking
+
+When comparing two responses, consider the following hierarchy: Hallucination > Logic > Style. 
+
+This means that if Response A has a single Hallucination error and Response B has 100 Logic errors, Response B is BETTER than Response A due to the strict hierarchy of error types.
